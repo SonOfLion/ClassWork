@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+@import '.variable.scss';
+$color-yellow:yellow;
+$color-green:green;
+.submenu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.header {
+    height: 48px;
+    background-color: green($color: #000000);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+&_item {
+    line-height: 48px;
+    margin-left: 16px;
+    color: white;
+}
+
+&_item-text {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+&-item:hover {
+    color: yellow;
+}

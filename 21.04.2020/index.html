@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //input:array;
+        //output:array;
+
+        function squareArr(arr) {
+            const result = [];
+            for (let i = 0; i < arr.lenght; i += 1) {
+                const square = arr[i] * arr[i];
+                result.push(square);
+            }
+            return result;
+        }
+
+        const numbers = [4, 5, 3, 4, 5];
+
+        const result = squareArr(numbers);
+
+        console.log('result', result);
+
+        console.log('result', numbers);
+    </script>
+</body>
+
+</html>

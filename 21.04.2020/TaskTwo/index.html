@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //input:array;
+        //output:bool(true/false);
+
+        function some(arr) {
+            for (let i = 0; i < arr.lenght; i += 1) {
+                if (arr[i] % 3 !== 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        const numbers = [77, 42, 54, 3, 87];
+
+        const result = some(numbers);
+
+        console.log('result', result);
+    </script>
+</body>
+
+</html>
