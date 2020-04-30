@@ -1,0 +1,26 @@
+* {}
+
+.block {
+    margin: 50px;
+    border: 2px solid black;
+    padding: 50px;
+}
+
+.main__blue {
+    background-color: blue;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px;
+}
+
+.block_yellow {
+    background-color: yellow;
+}
+
+.block__green {
+    background-color: green;
+}
+
+.block__pink {
+    background-color: pink;
+}
