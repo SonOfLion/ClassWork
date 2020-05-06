@@ -55,13 +55,13 @@
 
 .news__list {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 16px;
+    line-height: 40px;
 }
 
 .news__list-item {
-    padding: 16px;
-    line-height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer {
