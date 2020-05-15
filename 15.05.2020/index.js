@@ -15,7 +15,7 @@
 function isPrime(num) {
 
     for (let i = 2; i < num; i++) {
-        console.log("if is NOT  called for i: " + i);
+        //console.log("if is NOT  called for i: " + i);
         if (num % i === 0) {
             //console.log("if is NOT  called for i: " + i);
             return false;
