@@ -36,7 +36,7 @@ function isPrime(num) {
 // input:n;
 // output:undefined;
 function getPrimes(n) {
-    for (let i = 1; i <= n; i++) {
+    for (let i = 2; i <= n; i++) {
         if (isPrime(i)) {
             console.log(i);
         }
