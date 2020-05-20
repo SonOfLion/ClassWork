@@ -92,7 +92,7 @@ console.log('After : ' + squaredNumbers);
 // c помощью метода filter создайте новый массив evenNumbers, в котором только четные числа из numbersList
 // выведите evenNumbers в консоль
 
-console.log('Before : ' + squaredNumbers);
+// console.log('Before : ' + squaredNumbers);
 
 
 // let callback = function(el) {
@@ -102,9 +102,13 @@ console.log('Before : ' + squaredNumbers);
 //         return false;
 //     }
 // }
-const filtered = squaredNumbers.filter((el) => el % 2 === 0);
+const filtered = squaredNumbers.filter((el, index, array) => {
 
-console.log('After : ' + filtered);
+    console.log(index);
+    console.log(array);
+    return el % 2 === 0;
+});
+
 
 /* метод find */
 /* const arrElement = arr.filter(callback) - вернет первый элемент массива arr, который удовлетворяет условию в callback. */
@@ -113,4 +117,36 @@ console.log('After : ' + filtered);
 
 // c помощью метода find найдите первое нечетное число в numbersList и выведите его в консоль
 
-// ... code here
+const numbers = [1, 2, 3, 4, 5, 100, 40, 44, 55, 1234];
+
+const res = numbers.find(el => el > 200);
+
+console.log(res);
+
+/*метод forEach*/
+
+let sum = 0;
+console.log(numbers.forEach(el => sum += el));
+console.log(sum);
+
+/*метод reduce*/
+
+console.log("Before reduce");
+let res10 = numbers.reduce((acc, el, index) => {
+    console.log('STEP' + index + "acc is: " + acc);
+    return acc += el;
+}, 0);
+
+console.log("After reduce");
+
+//2
+console.log("Before reduce 2 ");
+
+console.log(numbers.reduce((acc, el, index) => {
+    if (el % 2 === 0)
+        acc.push(el);
+
+    return acc;
+}, []));
+
+console.log("After reduce 2");
