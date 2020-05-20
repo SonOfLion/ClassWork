@@ -51,7 +51,7 @@ console.log('After : ' + numbersList);
 // выведите numbersList в консоль
 
 console.log('Before : ' + numbersList);
-let res5 = numbersList.unshift(5);
+let res5 = numbersList.unshift(0);
 console.log(res5);
 console.log('After : ' + numbersList);
 
