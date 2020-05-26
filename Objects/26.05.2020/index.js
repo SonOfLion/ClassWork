@@ -1,43 +1,44 @@
 //input:object,string;
 //output:obj;
+
 function addPropertyV1(userData, userId) {
     userData.id = userId;
     return userData;
 }
 
-//input:object,string;
-//output:obj;
+// input: object, string;
+//output: object;
 function addPropertyV2(userData, userId) {
-    let target = {};
-    let obj = { id: userId };
-    return Object.assign(target, userData, obj);
+    Object.assign(userData, { id: userId });
+    return userData;
 }
 
-
-//input:object,string;
-//output:obj;
+// input: object, string;
+//output: object;
 function addPropertyV3(userData, userId) {
     return Object.assign({}, userData, { id: userId });
+
 }
 
-
-//input:object,string;
-//output:obj;
+// input: object, string;
+//output: object;
 function addPropertyV4(userData, userId) {
-    //how to copy obj;
-    // let resObj = {...userData};
-    // let resObj = Object.assign({},userData);
-
-    let resObj = {...userData, id: userData };
-
+    let resObj = {...userData, id: userId };
     return resObj;
+
 }
 
 let userData = {
-    name: 'Andrey',
-    city: 'Lviv',
+    name: "Andrey",
+    city: "Lviv",
     age: 20,
 };
+
+let userId = "1111";
+// let obj = {userId};
+console.log(addPropertyV4(userData, userId));
+// console.log(obj);
+console.log(userData);
 
 let userId = "1111";
 
