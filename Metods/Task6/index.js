@@ -24,7 +24,7 @@
 
 // let counter = 0;
 
-function makeCounter() {
+export function makeCounter() {
     // let counter = 10;
     let counter = 0;
 
