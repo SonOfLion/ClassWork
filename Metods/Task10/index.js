@@ -15,8 +15,8 @@ export const timer = {
     startTimer() {
         this.intervalId = setInterval(() => {
             this.secondsPassed += 1;
-            if (this.seconsPassed === 60) {
-                this.seconsPassed = 0;
+            if (this.secondsPassed === 60) {
+                this.secondsPassed = 0;
                 this.minutesPassed += 1;
             }
             // console.log(this.secondsPassed);
