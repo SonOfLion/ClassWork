@@ -1,4 +1,4 @@
-const timer = {
+export const timer = {
     secondsPassed: 0,
     minutesPassed: 0,
     intervalId: null,
