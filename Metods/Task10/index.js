@@ -1,6 +1,6 @@
 export const timer = {
     secondsPassed: 0,
-    minutesPassed: 0,
+    minsPassed: 0,
     intervalId: null,
     // startTimer() {
     //     // LOOSE CONTEXT
@@ -17,7 +17,7 @@ export const timer = {
             this.secondsPassed += 1;
             if (this.secondsPassed === 60) {
                 this.secondsPassed = 0;
-                this.minutesPassed += 1;
+                this.minsPassed += 1;
             }
             // console.log(this.secondsPassed);
         }, 1000)
