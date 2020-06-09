@@ -27,11 +27,11 @@ export const timer = {
         clearInterval(this.intervalId);
     },
     getTime() {
-        let secondsFormated = this.secondsPassed < 10 ?
-            `0${this.secondsPassed}` :
-            this.secondsPassed;
+        // let secondsFormated = this.secondsPassed < 10 ?
+        //     `0${this.secondsPassed}` :
+        //     this.secondsPassed;
 
-        return `${this.minutesPassed}:${this.secondsPassed}`;
+        return `${this.minsPassed}:0${this.secondsPassed}`;;
     },
     resetTimer() {
         this.secondsPassed = 0;
