@@ -57,7 +57,7 @@ let user = {
 
 //input: func, obj;
 //output:func;
-export function myBind2(func, context) {
+export function bind(func, context) {
     //1. add func into context
     //2. call func and return result
     return function(...args) {
