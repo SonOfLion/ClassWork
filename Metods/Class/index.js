@@ -1,7 +1,7 @@
 //Class
 //prototype - это скрытое свойство объекта, имеет сылку на объект
 
-function User(name, age) {
+export function User(name, age) {
     // let user = {};
     // Object.assign(user, { name });
     // Object.assign(user, { age });
@@ -11,15 +11,15 @@ function User(name, age) {
     this.age = age;
 }
 
-User.prototype.sayHi = function() {
+export default User.prototype.sayHi = function() {
     console.log(`Hi, I am ${this.name}`)
 };
 
-User.prototype.requestNewPhoto = function() {
+export default User.prototype.requestNewPhoto = function() {
     console.log(`New photo request was sent for ${this.name}`);
 };
 
-User.prototype.setAge = function(value) {
+export default User.prototype.setAge = function(value) {
     if (value < 0) {
         return false;
     }
