@@ -9,7 +9,7 @@ export class Sportsman {
 };
 
 export class Swimmer extends Sportsman {
-    constructor(name, swim) {
+    constructor(name, swimStyle) {
         super(name);
         this.swimStyle = this.swimStyle;
     }
