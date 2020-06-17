@@ -1,4 +1,4 @@
-class Sportsman {
+export class Sportsman {
     constructor(name) {
         this.name = name;
     }
@@ -8,14 +8,14 @@ class Sportsman {
     }
 };
 
-class Swimmer extends Sportsman {
+export class Swimmer extends Sportsman {
     constructor(name, swim) {
         super(name);
-        this.swimStyle = swim;
+        this.swimStyle = this.swimStyle;
     }
 
     swim() {
-        console.log(`${this.name} is swimming ${this.swim}`);
+        console.log(`${this.name} is swimming ${this.swimStyle}`);
     }
 };
 
