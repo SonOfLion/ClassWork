@@ -11,7 +11,7 @@ export class Sportsman {
 export class Swimmer extends Sportsman {
     constructor(name, swimStyle) {
         super(name);
-        this.swimStyle = this.swimStyle;
+        this.swimStyle = swimStyle;
     }
 
     swim() {
