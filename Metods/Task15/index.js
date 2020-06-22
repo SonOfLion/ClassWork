@@ -1,7 +1,7 @@
 //DOM
 
 
-const setButton = (textButton) => {
+export const setButton = (textButton) => {
     //part 1
     // const button = `<button>${textButton}</button>`;
     // document.querySelector('body').innerHTML = button;
