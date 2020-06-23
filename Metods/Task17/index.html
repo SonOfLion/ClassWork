@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="page">
+        <form class="login-form">
+            <h1 class="form-title">Login</h1>
+            <div class="form-control">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="mail@example.com" required />
+                <span class="error-text error-text_email"></span>
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" name="password" required />
+                <span class="error-text error-text_password"></span>
+            </div>
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
