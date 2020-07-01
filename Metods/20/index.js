@@ -1,6 +1,6 @@
 const baseUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1';
 
-async function getUserData(userId) {
+export async function getUserData(userId) {
     // let response;
 
     // try {
@@ -26,7 +26,7 @@ async function getUserData(userId) {
     return response.json();
 }
 
-async function printUserData(userId) {
+export async function printUserData(userId) {
     try {
         const user = await getUserData(userId)
 
