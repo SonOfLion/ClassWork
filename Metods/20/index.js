@@ -29,7 +29,7 @@ export async function getUserData(userId) {
 export async function printUserData(userId) {
     try {
         const user = await getUserData(userId)
-            // console.log(user);
+        console.log(user);
     } catch (er) {
         console.log(er);
     }
@@ -45,4 +45,4 @@ export async function printUserData(userId) {
 //Catch
 //Throw
 
-// printUserData(13)
+printUserData(13)
