@@ -40,7 +40,7 @@ const onsendData = async(event) => {
 
     const userData = await createUser(formData);
 
-    inputs.forEach((elem) => (elem.value = ""));
+    inputs.forEach((elem) => (elem.value = ''));
     submitBtnElem.disabled = true;
     alert(JSON.stringify(userData));
 };
