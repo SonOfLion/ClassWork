@@ -1,9 +1,8 @@
 'use strict';
 
-const serverUrl = 'https://5ee220bb8b27f3001609462e.mockapi.io/api/v1/userForm';
+const serverUrl = 'https://5ee220bb8b27f3001609462e.mockapi.io/api/v1/userForm'
 
-const inputs = document.querySelectorAll('.form-input');
-console.log(document.querySelectorAll);
+const inputs = [...document.querySelectorAll('.form-input')];
 const submitBtnElem = document.querySelector('.submit-button');
 const errorElem = document.querySelector('.error-text');
 const formElem = document.querySelector('.login-form');
@@ -23,7 +22,6 @@ const createUser = async(user) => {
         },
         body: JSON.stringify(user),
     });
-
     if (!response.ok) {
         errorElem.textContent = "Failed to create user";
         throw new Error();
@@ -31,19 +29,17 @@ const createUser = async(user) => {
     return response.json();
 };
 
-const onsendData = async(event) => {
+const onsendData = async event => {
     event.preventDefault();
 
     const formData = Object.fromEntries(new FormData(formElem));
 
-    createUser(formData);
-
     const userData = await createUser(formData);
 
-    inputs.forEach((elem) => (elem.value = ''));
+    inputs.map(elem => elem.value = '');
     submitBtnElem.disabled = true;
     alert(JSON.stringify(userData));
-};
+}
 
-formElem.addEventListener("submit", onsendData);
-formElem.addEventListener("input", onValid);
+formElem.addEventListener('submit', onsendData);
+formElem.addEventListener('input', onValid);
