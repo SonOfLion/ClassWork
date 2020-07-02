@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="page">
+        <form class="login-form">
+            <h1 class="form-title">Create user</h1>
+            <div class="form-control">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="mail@example.com" required />
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="email">User name</label>
+                <input class="form-input" type="text" id="name" name="name" required />
+            </div>
+            <div class="form-control">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" name="password" required />
+            </div>
+            <button class="submit-button" type="submit" disabled>Submit</button>
+            <div class="error-text"></div>
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
