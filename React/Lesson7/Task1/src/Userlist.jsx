@@ -39,7 +39,7 @@ class UsersList extends React.Component {
         />
         <ul className="users">
             {usersToDisplay.map(user => (
-            <User key={user.id} {...user} />
+            <User name={user.name} age={user.age} />
             ))
             }
         </ul>
