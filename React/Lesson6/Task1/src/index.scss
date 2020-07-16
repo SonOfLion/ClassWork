@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: green;
+}
+
+.logout {
+    background-color: cornflowerblue;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg); 
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+.spinner {
+    display: inline-block;
+    border: 3px solid #ccc;
+    border-left-color: transparent;
+    animation: spin .5s infinite linear;
+    border-radius: 50%;
+}
+
+.btn {
+    height: 48px;
+    color: #fff;
+    border-radius: 8px;
+    width: 120px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px;
+    cursor: pointer;
+}
