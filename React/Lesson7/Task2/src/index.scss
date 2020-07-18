@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user {
+    margin: 8px;
+    width: 150px;
+    display: flex;
+    
+    &__age {
+        font-weight: 700;
+        opacity: 0.5;
+        margin-left: auto;
+    }
+}
+
+.btn {
+    height: 32px;
+    color: #fff;
+    border-radius: 8px;
+    width: 64px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 8px;
+    cursor: pointer;
+    background-color: green;
+}
