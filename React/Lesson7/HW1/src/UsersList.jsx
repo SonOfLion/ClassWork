@@ -38,8 +38,8 @@ class UsersList extends React.Component {
                 totalItems={users.length}
             />
             <ul className="users">
-                {usersToDisplay.map(user =>
-                    {return <User key ={user.id}
+                {usersToDisplay.map(user => {
+                    return <User key ={user.id}
                     name={user.name}
                     age={user.age}
                 />
