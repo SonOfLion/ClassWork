@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 class UsersList extends React.Component {
     state = {
     currentPage: 0,
-    itemsPerPage: 3
+    itemsPerPage: 3,
 };
 
     goNext = () => {
@@ -38,10 +38,12 @@ class UsersList extends React.Component {
                 totalItems={users.length}
             />
             <ul className="users">
-                {usersToDisplay.map(user => (
-                <User name={user.name} age={user.age} />
-                ))
-                }
+                {usersToDisplay.map(user =>
+                    {return <User key ={user.id}
+                    name={user.name}
+                    age={user.age}
+                />
+                })};
             </ul>
         </div >
     );
